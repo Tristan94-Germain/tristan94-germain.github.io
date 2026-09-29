@@ -126,7 +126,7 @@ a {
 }
 
 /* =========================
-   MOBILE MENU BUTTON
+   MOBILE MENU
 ========================= */
 
 .menu-button {
@@ -149,10 +149,6 @@ a {
     margin: 4px 0;
 
     background: var(--text);
-
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease;
 }
 
 /* =========================
@@ -490,6 +486,8 @@ h1 {
     gap: 12px;
 }
 
+/* GitHub / LinkedIn / other clickable links */
+
 .links a {
     display: flex;
     align-items: center;
@@ -523,6 +521,29 @@ h1 {
     transform: translateY(-2px);
 }
 
+/* Email - displayed only, not clickable */
+
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px;
+
+    border: 1px solid var(--border);
+
+    background: transparent;
+
+    color: var(--muted);
+
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.link-item span:last-child {
+    color: var(--text);
+}
+
 /* =========================
    FOOTER
 ========================= */
@@ -545,7 +566,7 @@ h1 {
 }
 
 /* =========================
-   TEXT SELECTION
+   SELECTION
 ========================= */
 
 ::selection {
@@ -673,6 +694,12 @@ h1 {
 
     .links {
         grid-template-columns: 1fr;
+    }
+
+    .link-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 
     .footer {
