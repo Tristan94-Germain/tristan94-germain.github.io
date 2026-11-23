@@ -457,6 +457,127 @@ h1 {
 }
 
 /* =========================
+   FEATURED PROJECT (VIDEO)
+========================= */
+
+.project--featured {
+    grid-template-columns: 1fr;
+}
+
+.project--featured:hover {
+    transform: none;
+}
+
+.project-media {
+    display: flex;
+    flex-direction: column;
+
+    background: #050706;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.project-video {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+
+    object-fit: contain;
+}
+
+.video-tabs {
+    display: flex;
+    gap: 6px;
+
+    padding: 10px 12px;
+}
+
+.video-tab {
+    padding: 6px 12px;
+
+    border: 1px solid rgba(184, 255, 61, 0.12);
+    background: transparent;
+
+    color: var(--muted);
+
+    font-family: inherit;
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.video-tab:hover {
+    color: var(--text);
+    border-color: rgba(184, 255, 61, 0.35);
+}
+
+.video-tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+
+    color: #080a09;
+}
+
+.video-tab:focus-visible {
+    outline: 1px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.project-info .project-kind {
+    margin-top: 0;
+    margin-bottom: 6px;
+
+    color: var(--accent);
+
+    font-size: 0.65rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.project-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 24px;
+
+    margin-top: 18px;
+
+    list-style: none;
+}
+
+.project-features li {
+    position: relative;
+
+    padding-left: 16px;
+
+    color: var(--muted);
+
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+.project-features li::before {
+    content: ">";
+
+    position: absolute;
+    left: 0;
+
+    color: var(--accent);
+
+    font-weight: 700;
+}
+
+/* =========================
    ABOUT
 ========================= */
 
@@ -690,6 +811,10 @@ h1 {
 
     .project-info {
         padding: 24px;
+    }
+
+    .project-features {
+        grid-template-columns: 1fr;
     }
 
     .links {

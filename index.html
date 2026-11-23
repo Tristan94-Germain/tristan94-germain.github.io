@@ -55,27 +55,69 @@
             </div>
 
             <div class="projects">
-                <!-- PROJECT 01 -->
-                <article class="project">
-                    <div class="project-image">
-                        <!-- Replace this placeholder with your game image -->
-                        <span>YOUR GAME IMAGE</span>
+                <!-- PROJECT 01 - BIOPULSE -->
+                <article class="project project--featured" id="biopulse">
+                    <div class="project-media" data-video-player>
+                        <video
+                            class="project-video"
+                            controls
+                            playsinline
+                            preload="none"
+                            poster="assets/biopulse/biopulse-gameplay-poster.jpg"
+                            src="assets/biopulse/biopulse-gameplay.mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+
+                        <div class="video-tabs" role="tablist" aria-label="BioPulse videos">
+                            <button
+                                class="video-tab active"
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                                data-src="assets/biopulse/biopulse-gameplay.mp4"
+                                data-poster="assets/biopulse/biopulse-gameplay-poster.jpg">
+                                Gameplay
+                            </button>
+                            <button
+                                class="video-tab"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-src="assets/biopulse/biopulse-presentation.mp4"
+                                data-poster="assets/biopulse/biopulse-presentation-poster.jpg">
+                                Presentation
+                            </button>
+                        </div>
                     </div>
 
                     <div class="project-info">
-                        <h3>Your Game</h3>
+                        <p class="project-kind">2D Action Platformer · C++ / SFML</p>
+                        <h3>BioPulse</h3>
                         <p>
-                           Add a short description of your project here.
-                           Explain what you created and the technologies used.
+                            An underwater action platformer in pixel art. The player explores
+                            a submarine laboratory through a series of rooms full of enemies,
+                            all the way to the lair of the Giant Jellyfish boss.
                         </p>
+
+                        <ul class="project-features">
+                            <li>Responsive movement: run, jump, dash, crouch, wall jump and ladders</li>
+                            <li>Shooting system and a robot companion that turns into a platform</li>
+                            <li>Three enemy types: crab, pufferfish and seahorse</li>
+                            <li>Multi-phase boss fight (laser beam, falling tentacles)</li>
+                            <li>Health &amp; collectible shells, fixed HUD</li>
+                            <li>Built-in tile-based level editor</li>
+                            <li>Menus, options, pause with stats and gamepad support</li>
+                        </ul>
 
                         <div class="tags">
                             <span>C++</span>
                             <span>SFML</span>
                             <span>Gameplay</span>
+                            <span>Level Editor</span>
+                            <span>Boss Fight</span>
                         </div>
 
-                        <a href="#" class="project-link">View project →</a>
+                        <a href="https://github.com/Morgane-Prevost/BioPulse" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </div>
                 </article>
 
