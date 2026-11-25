@@ -36,3 +36,13 @@ document.querySelectorAll("[data-video-player]").forEach((player) => {
         });
     });
 });
+
+// Only one project video plays at a time
+const projectVideos = document.querySelectorAll(".project-video");
+projectVideos.forEach((video) => {
+    video.addEventListener("play", () => {
+        projectVideos.forEach((other) => {
+            if (other !== video) other.pause();
+        });
+    });
+});

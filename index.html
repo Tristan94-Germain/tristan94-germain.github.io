@@ -121,25 +121,66 @@
                     </div>
                 </article>
 
-                <!-- PROJECT 02 -->
-                <article class="project">
-                    <div class="project-image">
-                        <span>YOUR GAME IMAGE</span>
+                <!-- PROJECT 02 - HUNTED SOULS -->
+                <article class="project project--featured" id="hunted-souls">
+                    <div class="project-media" data-video-player>
+                        <video
+                            class="project-video"
+                            controls
+                            playsinline
+                            preload="none"
+                            poster="assets/huntedsouls/huntedsouls-gameplay-poster.jpg"
+                            src="assets/huntedsouls/huntedsouls-gameplay.mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+
+                        <div class="video-tabs" role="tablist" aria-label="Hunted Souls videos">
+                            <button
+                                class="video-tab active"
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                                data-src="assets/huntedsouls/huntedsouls-gameplay.mp4"
+                                data-poster="assets/huntedsouls/huntedsouls-gameplay-poster.jpg">
+                                Gameplay
+                            </button>
+                            <button
+                                class="video-tab"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-src="assets/huntedsouls/huntedsouls-presentation.mp4"
+                                data-poster="assets/huntedsouls/huntedsouls-presentation-poster.jpg">
+                                Presentation
+                            </button>
+                        </div>
                     </div>
 
                     <div class="project-info">
-                        <h3>Your Game</h3>
+                        <p class="project-kind">First-Person Survival · Unreal Engine 5 · Game Jam</p>
+                        <h3>Hunted Souls</h3>
                         <p>
-                            Add a short description of your project here.
-                            Explain what you created and the technologies used.
+                            A first-person survival game set in a haunted Paris at night.
+                            Armed with a glowing lantern, the player must survive as long
+                            as possible against the souls that roam the streets.
                         </p>
 
+                        <ul class="project-features">
+                            <li>Three monsters: the Bell, the Marianne and the Books</li>
+                            <li>Lantern flash that lights up the monsters</li>
+                            <li>Smash cars to make resources drop</li>
+                            <li>Inventory to store the collected resources</li>
+                            <li>Main menu with start, load, settings and quit</li>
+                        </ul>
+
                         <div class="tags">
-                            <span>C++</span>
-                            <span>SFML</span>
+                            <span>Unreal Engine 5</span>
+                            <span>Game Jam</span>
+                            <span>Survival</span>
+                            <span>First-Person</span>
                         </div>
 
-                        <a href="#" class="project-link">View project →</a>
+                        <a href="https://github.com/dark-dylan-dev/GameJam_Ghost" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
                     </div>
                 </article>
 
