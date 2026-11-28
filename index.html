@@ -184,25 +184,70 @@
                     </div>
                 </article>
 
-                <!-- PROJECT 03 -->
-                <article class="project">
-                    <div class="project-image">
-                        <span>YOUR GAME IMAGE</span>
+                <!-- PROJECT 03 - KABOOM MONSTERS (mobile, vertical videos) -->
+                <article class="project project--featured project--mobile" id="kaboom-monsters">
+                    <div class="project-media" data-video-player>
+                        <video
+                            class="project-video"
+                            controls
+                            playsinline
+                            preload="none"
+                            poster="assets/kaboommonsters/kaboommonsters-gameplay-poster.jpg"
+                            src="assets/kaboommonsters/kaboommonsters-gameplay.mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+
+                        <div class="video-tabs" role="tablist" aria-label="Kaboom Monsters videos">
+                            <button
+                                class="video-tab active"
+                                type="button"
+                                role="tab"
+                                aria-selected="true"
+                                data-src="assets/kaboommonsters/kaboommonsters-gameplay.mp4"
+                                data-poster="assets/kaboommonsters/kaboommonsters-gameplay-poster.jpg">
+                                Gameplay
+                            </button>
+                            <button
+                                class="video-tab"
+                                type="button"
+                                role="tab"
+                                aria-selected="false"
+                                data-src="assets/kaboommonsters/kaboommonsters-presentation.mp4"
+                                data-poster="assets/kaboommonsters/kaboommonsters-presentation-poster.jpg">
+                                Presentation
+                            </button>
+                        </div>
                     </div>
 
                     <div class="project-info">
-                        <h3>Your Game</h3>
+                        <p class="project-kind">Mobile Arcade · Unity · Game Jam</p>
+                        <h3>Kaboom Monsters</h3>
                         <p>
-                            Add a short description of your project here.
-                            Screenshots, videos and source code can be linked here.
+                            A mobile arcade game made in Unity during a game jam. Slide to aim
+                            the cannon and fire bombs to blow up the monsters, wave after wave,
+                            all the way to the boss.
                         </p>
 
-                        <div class="tags">
-                            <span>C++</span>
-                            <span>Game Development</span>
-                        </div>
+                        <p class="project-role">
+                            <strong>My role:</strong> game flow and UI: power-ups, coins,
+                            screens and pause menu.
+                        </p>
 
-                        <a href="#" class="project-link">View project →</a>
+                        <ul class="project-features">
+                            <li>Waves of monsters ending with a boss fight</li>
+                            <li>Three power-ups: Pierce, Burst and Power</li>
+                            <li>Coins and a shop with power-ups and cannon skins</li>
+                            <li>Rewarded ads: free power-ups and x2 coins on victory</li>
+                            <li>Title screen, pause menu and victory screen</li>
+                        </ul>
+
+                        <div class="tags">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Mobile</span>
+                            <span>Game Jam</span>
+                            <span>UI</span>
+                        </div>
                     </div>
                 </article>
             </div>

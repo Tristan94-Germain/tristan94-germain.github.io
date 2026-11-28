@@ -577,6 +577,61 @@ h1 {
     font-weight: 700;
 }
 
+/* Mobile game: vertical video beside the text */
+
+.project--mobile {
+    grid-template-columns: minmax(220px, 300px) 1fr;
+}
+
+.project--mobile .project-media {
+    justify-content: center;
+
+    padding: 18px;
+
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+}
+
+.project--mobile .project-video {
+    aspect-ratio: 9 / 16;
+}
+
+.project--mobile .video-tabs {
+    padding: 12px 0 0;
+}
+
+.project--mobile .project-features {
+    grid-template-columns: 1fr;
+}
+
+.project-info .project-role {
+    color: var(--text);
+}
+
+.project-role strong {
+    color: var(--accent);
+}
+
+@media (max-width: 700px) {
+    .project--mobile {
+        grid-template-columns: 1fr;
+    }
+
+    .project--mobile .project-media {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .project--mobile .project-video {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .project--mobile .video-tabs {
+        justify-content: center;
+    }
+}
+
 /* =========================
    ABOUT
 ========================= */
